@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifra de César</title>
+</head>
+<body>
+    <section class="principal">
+        <form>
+            <div class="msg">
+              <label>Insira a mensagem</label>
+              <textarea type="text" id="message-box" class="message-box w-40 roboto" placeholder="Escreva sua mensagem aqui"></textarea>  
+            </div>
+            
+            <div class="radio-btn">
+              <label for="codificar">Codificar</label>
+              <input type="radio" id="codificar" name="codificar" value="Codificar">
+              <label for="decodificar">Decodificar</label>
+              <input type="radio" id="decodificar" name="decodificar" value="Decodificar">
+            </div>
+            
+            <div class="btns">
+              <input type="button" value="Codificar">
+              <input type="button" value="Decodificar">
+            </div>
+  
+            <div class="msg-final" id="resultado"></div>
+        </form>
+      </section>
+
+    <footer class="footer">
+        <p>&copy; 2022 Keu Santos - Jogo criado para fins didáticos </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
