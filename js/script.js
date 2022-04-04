@@ -1,8 +1,13 @@
-function iniciaBase64() {
-    window.location.href = "/base64/Base64.html"
+function criptografa() {
+    var texto = document.getElementById("messagem-box").value;
+    var  textoCodificado = btoa(texto); 
+    
+    var resultado = document.getElementById("resultado");
+    
+    resultado.innerText = textoCodificado;
 }
 
-function iniciaCdc() {
-    window.location.href = "/CDC/cifraDeCesar.html"
+function ativaCodifica() {
+    var btnEnviar = document.getElementById("enviar");
+    btnEnviar.value = "Codificar mansagem!";
 }
-
