@@ -17,17 +17,16 @@
             
             <div class="radio-btn">
               <label for="codificar">Codificar</label>
-              <input type="radio" id="codificar" name="codificar" value="Codificar">
+              <input onclick="ativaCodifica()" type="radio" id="codificar" name="radio" value="Codificar">
               <label for="decodificar">Decodificar</label>
-              <input type="radio" id="decodificar" name="decodificar" value="Decodificar">
+              <input  onclick="ativaDecodifica()" type="radio" id="decodificar" name="radio" value="Decodificar">
             </div>
             
             <div class="btns">
-              <input type="button" value="Codificar">
-              <input type="button" value="Decodificar">
+              <input type="button" value="Enviar">
             </div>
-  
-            <div class="msg-final" id="resultado"></div>
+            
+            <div onclick="criptografa()" class="msg-final" id="resultado"></div>
         </form>
       </section>
 

@@ -1,13 +1,14 @@
 function criptografa() {
     var texto = document.getElementById("messagem-box").value;
-    var  textoCodificado = btoa(texto); 
-    
+    var  textoCodificado = btoa(texto);  
     var resultado = document.getElementById("resultado");
-    
     resultado.innerText = textoCodificado;
 }
 
 function ativaCodifica() {
-    var btnEnviar = document.getElementById("enviar");
-    btnEnviar.value = "Codificar mansagem!";
+    document.getElementById("enviar").value = "Codificar Mensagem!" 
+}
+
+function ativaDecodifica() {
+    document.getElementById("enviar").value = "Decodificar Mensagem!" 
 }
