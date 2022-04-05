@@ -8,31 +8,23 @@
     <title>Cifra de César</title>
 </head>
 <body>
-    <section class="principal">
-        <form>
-            <div class="msg">
-              <label>Insira a mensagem</label>
-              <textarea type="text" id="message-box" class="message-box w-40 roboto" placeholder="Escreva sua mensagem aqui"></textarea>  
-            </div>
-            
-            <div class="radio-btn">
-              <label for="codificar">Codificar</label>
-              <input onclick="ativaCodifica()" type="radio" id="codificar" name="radio" value="Codificar">
-              <label for="decodificar">Decodificar</label>
-              <input  onclick="ativaDecodifica()" type="radio" id="decodificar" name="radio" value="Decodificar">
-            </div>
-            
-            <div class="btns">
-              <input type="button" value="Enviar">
-            </div>
+    <form>
+      <label>Insira a mensagem</label>
+      <textarea type="text" id="message-box" class="message-box w-40 roboto" placeholder="Escreva sua mensagem aqui"></textarea>  
+      
+      <label for="codificar">Codificar</label>
+      <input onclick="ativaCodifica()" type="radio" id="codificar" name="radio" value="Codificar">
+      <label for="decodificar">Decodificar</label>
+      <input onclick="ativaDecodifica()" type="radio" id="decodificar" name="radio" value="Decodificar">
 
-            <div onclick="criptografa()" class="msg-final" id="resultado"></div>
-        </form>
-      </section>
+      <input id="enviar" onclick="criptografa()" type="button" value="Enviar">
+      
+    <div class="msg-final" id="resultado"></div>
+    </form>
 
     <footer class="footer">
         <p>&copy; 2022 Keu Santos - Jogo criado para fins didáticos </p>
     </footer>
-    <script src="/js/"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
