@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Cifra de César</title>
 </head>
 <body>
     <form>
       <label>Insira a mensagem</label>
-      <textarea type="text" id="message-box" class="message-box w-40 roboto" placeholder="Escreva sua mensagem aqui"></textarea>  
-      
-      <label for="codificar">Codificar</label>
-      <input onclick="ativaCodifica()" type="radio" id="codificar" name="radio" value="Codificar">
-      <label for="decodificar">Decodificar</label>
-      <input onclick="ativaDecodifica()" type="radio" id="decodificar" name="radio" value="Decodificar">
 
-      <input id="enviar" onclick="criptografa()" type="button" value="Enviar">
+      <br><textarea type="text" id="message-box"  placeholder="Escreva sua mensagem aqui"></textarea>  
       
-    <div class="msg-final" id="resultado"></div>
+      <br><input type="number" id="incremento" value="2">
+
+      <br><label for="codificar">Codificar</label>
+      <input  id="codificar" onclick="ativaCodifica()" type="radio"  name="radio" value="Codificar">
+      
+      <label for="decodificar">Decodificar</label>
+      <input id="decodificar" onclick="ativaDecodifica()" type="radio" name="radio" value="Decodificar">
+
+      <input id="enviar" type="button" value="Enviar">
+      
     </form>
+    
+    <div class="msg-final" id="resultado"></div>
+
+    <button id="limpar">Limpar</button>
+      
 
     <footer class="footer">
         <p>&copy; 2022 Keu Santos - Jogo criado para fins didáticos </p>
