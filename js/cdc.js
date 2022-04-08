@@ -34,7 +34,7 @@ function codificar() {
     const resultado = acaoCodifica(textoDigitado, incremento);
   
     document.getElementById("resultado").innerHTML =
-    ("<h3 id='titulo2'>Mensagem cifrada:</h3>" +
+    ("<h3 id='titulo2'>Mensagem codificada:</h3>" +
       "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
 }
 
@@ -64,7 +64,7 @@ function  decodificar() {
     const resultado = acaodecodificar(textoDigitado, incremento);
   
     document.getElementById("resultado").innerHTML =
-      ("<h3 id='titulo2'>Mensagem decifrada:</h3>" +
+      ("<h3 id='titulo2'>Mensagem decodificada:</h3>" +
         "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
   }
 

@@ -15,8 +15,8 @@ function codificar() {
     const resultado = encodedStr;
   
     document.getElementById("resultado").innerHTML =
-    ("<h3 id='titulo2'>Mensagem cifrada:</h3>" +
-      "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
+    ("<h3 id='msg'>Mensagem:</h3>" +
+    "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
 }
 
 function decodificar() {
@@ -26,8 +26,8 @@ function decodificar() {
     const resultado = encodedStr;
   
     document.getElementById("resultado").innerHTML =
-    ("<h3 id='titulo2'>Mensagem cifrada:</h3>" +
-      "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
+    ("<h3 id='msg'>Mensagem:</h3>" +
+    "<textarea rows=5 cols=70>" + resultado + "</textarea><br>");
 }
 
 document.getElementById("limpar").addEventListener("click", limpar);
