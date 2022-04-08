@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <title>Base64</title>
 </head>
 <body>
-      <form>
-            <label>Insira a mensagem</label>
-            <textarea type="text" id="message-box" class="message-box" placeholder="Escreva sua mensagem aqui"></textarea>  
+    <main class="conteiner">
+        <form>
+            <label>Insira a mensagem</label> <br> 
+            <textarea rows=5 cols=70 type="text" id="message-box" class="message-box" placeholder="Escreva sua mensagem aqui"></textarea> <br>  
             
-            <label for="codificar">Codificar</label>
-            <input onclick="ativaCodifica()" type="radio" id="codificar" name="radio" value="Codificar">
+            <br> <label for="codificar">Codificar</label>
+            <input onclick="ativaCodifica()" type="radio" class="radio" id="codificar" name="radio" value="Codificar">
             <label for="decodificar">Decodificar</label>
-            <input onclick="ativaDecodifica()" type="radio" id="decodificar" name="radio" value="Decodificar">
+            <input onclick="ativaDecodifica()" type="radio" class="radio"  id="decodificar" name="radio" value="Decodificar">
       
-            <input id="enviar" type="button" value="Enviar">
+            <br><input class="btn-enviar" id="enviar" type="button" value="Enviar">
             
           <div class="msg-final" id="resultado"></div>
-      </form>
-      <button id="limpar">Limpar</button>
-      
+        </form>
+        <button id="limpar" class="btn-limpar">Limpar</button>
+    </main>
+
     <footer class="footer">
         <p>&copy; 2022 Keu Santos - Jogo criado para fins didáticos </p>
     </footer>

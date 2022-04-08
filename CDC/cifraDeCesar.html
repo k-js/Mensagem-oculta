@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
     <title>Cifra de César</title>
 </head>
 <body>
-    <form>
-      <label>Insira a mensagem</label>
-
-      <br><textarea type="text" id="message-box"  placeholder="Escreva sua mensagem aqui"></textarea>  
+    <main class="conteiner">
+        <form>
+            <label>Insira a mensagem</label>
       
-      <br><input type="number" id="incremento" value="2">
-
-      <br><label for="codificar">Codificar</label>
-      <input  id="codificar" onclick="ativaCodifica()" type="radio"  name="radio" value="Codificar">
+            <br><textarea rows=5 cols=70 type="text" id="message-box"  placeholder="Escreva sua mensagem aqui"></textarea>  
+            
+            <br><input type="number" id="incremento" value="2">
       
-      <label for="decodificar">Decodificar</label>
-      <input id="decodificar" onclick="ativaDecodifica()" type="radio" name="radio" value="Decodificar">
-
-      <input onclick="codificar()" id="enviar" type="button" value="Enviar">
+            <br><label for="codificar">Codificar</label>
+            <input  id="codificar" onclick="ativaCodifica()" class="radio"  type="radio"  name="radio" value="Codificar">
+            
+            <label for="decodificar">Decodificar</label>
+            <input id="decodificar" onclick="ativaDecodifica()" class="radio"  type="radio" name="radio" value="Decodificar">
       
-    </form>
-    
-    <div class="msg-final" id="resultado"></div>
-
-    <button id="limpar">Limpar</button>
+            <br><input onclick="codificar()" id="enviar" class="btn-enviar" type="button" value="Enviar">
+            
+          </form>
+          
+          <div class="msg-final" id="resultado"></div>
       
+          <button id="limpar" class="btn-limpar" >Limpar</button>
+    </main>
 
     <footer class="footer">
         <p>&copy; 2022 Keu Santos - Jogo criado para fins didáticos </p>
